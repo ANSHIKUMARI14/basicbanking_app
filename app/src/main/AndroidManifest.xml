@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bank4"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/bank4"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme_black">
+        <activity android:name=".Payment_status"></activity>
+        <activity
+            android:name=".home_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".user_list"
+            android:label="BANKING SYSTEM"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name=".user_data"
+            android:label="USER DATA"
+            android:parentActivityName=".user_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".sendtouser"
+            android:label="SEND MONEY"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".history_list"
+            android:label="HISTORY"
+            android:parentActivityName=".user_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>
